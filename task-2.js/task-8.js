@@ -8,7 +8,7 @@ function reduceArray(array) {
     if (array.length === 0) {
         return 0;
       }
-    return total;
+    return total; 
   };
   
   console.log(reduceArray([1, 2, 3]));
