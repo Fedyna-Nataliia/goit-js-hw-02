@@ -67,5 +67,10 @@ function isLoginValid (login, min = 4, max = 16) {
 //Предикатные функции возвращают только true или false. Такие функции принято называть начиная с is: isLoginUnique и isLoginValid в нашем случае.
 
 //isLoginUnique только проверяет есть ли такой логин в массиве и возвращает true или false.
-//isLoginValid только проверяет валидный ли логин и возвращает true или false.
+//isLoginValid только проверяет валидный лигин и возвращает true или false. лоlet message = '';
+
+ 
 //addLogin добавляет или не добавляет логин в массив. При этом для проверок условия добавления использует результаты вызовов других функций - isLoginUnique и isLoginValid. //
+
+
+
