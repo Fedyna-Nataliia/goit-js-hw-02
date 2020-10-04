@@ -1,13 +1,12 @@
-function isLoginValid (login, min = 4, max = 16) {
+ function isLoginValid (login, min = 4, max = 16) {
     // Write code under this line
     return login.length >= min && login.length <= max ;
-   
   }
   
   function isLoginUnique  (allLogins, login) {
     'use strict';
     // Write code under this line
-    return allLogins.includes(login) ? false : true ;
+    return allLogins.includes(login);
   }
   
   function addLogin (allLogins, login) {
@@ -17,9 +16,9 @@ function isLoginValid (login, min = 4, max = 16) {
     const ERROR = 'Ошибка! Логин должен быть размером от 4 до 16 символов';
     let message;
     // Write code under this line    
-     if (isLoginValid(login) === false) {
+     if (isLoginValid  === false) {
       message = ERROR;
-    } else if (isLoginUnique(allLogins, login) !== true) {
+    } else if (isLoginUnique (allLogins, login) === true) {
       message = REFUSAL;
     } else {
       allLogins.push(login);
@@ -71,6 +70,3 @@ function isLoginValid (login, min = 4, max = 16) {
 
  
 //addLogin добавляет или не добавляет логин в массив. При этом для проверок условия добавления использует результаты вызовов других функций - isLoginUnique и isLoginValid. //
-
-
-

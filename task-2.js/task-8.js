@@ -10,6 +10,16 @@ function reduceArray(array) {
       }
     return total; 
   };
+
+  /* або if ( array = []) {
+   return '0';
+  }
+  for (let i = 0; i < array.length; i += 1) {
+ total += array[i];
+  }
+  return total; 
+  };
+        */
   
   console.log(reduceArray([1, 2, 3]));
   // 6

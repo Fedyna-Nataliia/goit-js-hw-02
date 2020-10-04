@@ -5,6 +5,10 @@ function filterArray(array) {
       // Write code under this line
     if (!Number.isFinite(array[i])) continue;
     numbers.push(array[i]);
+
+    // або if (Number.isFinite(array[i]) === true) {
+   // numbers.push(array[i]); 
+
     }
     return numbers;
   }
