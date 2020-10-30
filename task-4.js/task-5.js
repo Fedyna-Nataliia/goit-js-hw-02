@@ -54,5 +54,5 @@ const inventory = {
   
   console.log(arrayRemove);
   // ['Knife', 'Medkit']
-  
+
   
