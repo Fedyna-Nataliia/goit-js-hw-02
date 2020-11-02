@@ -11,24 +11,26 @@ removeItem(item) - получает товар и, если он есть, уд�
 */
 
 class Storage {
-    constructor(goods) {
-    this.goods = goods;
-      
+    constructor(items = []) {
+    this.items = items;  
   }
   getItems() {
-    return this.goods;
+    return this.items;
   }
   addItem(item) {
-    return this.goods.push(item);
+    return this.items.push(item);
      }
  
-      removeItem(item) {
-     return  this.goods = this.goods.filter(items => items !== item);
-        
-    //return this.item.splice(this.item.indexOf(item), 1);
-       }
-         
+ removeItem(item) {
+      // Варіант 1
+  return  this.items = this.items.filter(items => items !== item);
+      
+      // Варіант 2
+ // if (this.items.includes(item)) {
+   // this.items.splice(this.items.indexOf(item), 1);
+    //   }    
     }
+  }
   
  console.log(typeof Storage);
 // 'function'
